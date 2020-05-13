@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ Loco xml export: Android string resources
+ Project: spreadit
+ Release: Working copy
+ Locale: de, German
+ Exported by: K. Dermitzakis
+ Exported at: Wed, 13 May 2020 13:56:26 +0200
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">spreadit</string>
+    <string name="action_settings">Einstellungen</string>
+    <string name="terms_text">&lt;html&gt;\n\u0020\u0020\t\t\t&lt;body&gt;\n\u0020\u0020\t\t\t&lt;h5&gt;&lt;strong&gt;Revision 0.3.2 - Last updated 04.05.2020&lt;/strong&gt;&lt;/h5&gt;\n\t\t&lt;p style=\"text-align:justify\"&gt;This policy concerns the spreadit app and backend. It is subject to change without notice in the event additional privacy concerns need to be addressed. Any changes will be indicated with an updated (1) &lt;strong&gt;revision number&lt;/strong&gt; and (2) &lt;strong&gt;revision date&lt;/strong&gt;. We strongly encourage you to review this privacy policy frequently.&lt;/p&gt;\n\t\t\n\t\t&lt;hr&gt;\n\t\t\n\t\t&lt;p style=\"text-align:justify\"&gt;The spreadit app can be downloaded &lt;strong&gt;voluntarily&lt;/strong&gt; and facilitates the contact tracing process for &lt;strong&gt;unknown contacts&lt;/strong&gt;. With your consent, after you scan a Location QR code, it records your visit to that location, for that instance. The Location QR codes are placed at what we call &lt;strong&gt;unknown contact locations&lt;/strong&gt;.&lt;/p&gt;\n\n\n\t\t&lt;p style=\"text-align:justify\"&gt;Use of spreadit allows you to be notified if you were in physical proximity (1) &lt;strong&gt;at that location&lt;/strong&gt; and (2) &lt;strong&gt;at the same time&lt;/strong&gt;, with a spreadit user that has recently been tested positive.&lt;/p&gt;\n\t\t\n\t\t&lt;p style=\"text-align:justify\"&gt;Furthermore, if you choose to scan a Test QR code, spreadit can also notify you of your COVID-19 test results when they are available. We are commited to &lt;strong&gt;safeguarding your privacy&lt;/strong&gt; and &lt;strong&gt;ensuring you have full control over your data&lt;/strong&gt;.&lt;/p&gt;\n\t\t\n\t\t&lt;hr&gt;\n\t\t&lt;h2&gt;We store limited data&lt;/h2&gt;\n\n\t\t&lt;p style=\"text-align:justify\"&gt;The majority of the data we store is fully anonymised and primarily consists of randomly generated, secure Universally Unique IDs &lt;strong&gt;(&lt;a href=\"https://en.wikipedia.org/wiki/Universally_unique_identifier\"&gt;UUIDs&lt;/a&gt;, Version 4)&lt;/strong&gt; e.g. &lt;strong&gt;e4174f73-a3d6-4257-a4c1-d0f6b82e5bec&lt;/strong&gt;. As such, data we store includes&lt;/p&gt;\n\n\t\t&lt;ul&gt;\n\t\t\t&lt;li style=\"text-align:justify\"&gt;Your &lt;strong&gt;User ID&lt;/strong&gt; (automatically generated upon accepting this Privacy Policy), stored by the &lt;strong&gt;UserManager&lt;/strong&gt;.&lt;/li&gt;\n\t\t\t&lt;li style=\"text-align:justify\"&gt;When you scan a Location-QR, a randomly generated UUID of your scan (&lt;strong&gt;Scan ID&lt;/strong&gt;) together with your &lt;strong&gt;User ID&lt;/strong&gt; and the &lt;strong&gt;Location ID&lt;/strong&gt;, stored by the &lt;strong&gt;ScanManager&lt;/strong&gt;.&lt;/li&gt;\n\t\t\t&lt;li style=\"text-align:justify\"&gt;When you scan a COVID-19 Test-QR to opt for receiving test results, the randomly generated UUID of the test (&lt;strong&gt;Results ID&lt;/strong&gt;), together with your &lt;strong&gt;User ID&lt;/strong&gt;, stored by the &lt;strong&gt;ResultsManager&lt;/strong&gt;.&lt;/li&gt;\n\t\t&lt;/ul&gt;\n\n\t\t&lt;p style=\"text-align:justify\"&gt;For further details on how the backend architecture is ensuring your anonymity, please visit the &lt;strong&gt;&lt;a href=\"https://spreadit.eggze.com/system-design/\"&gt;System Design&lt;/a&gt;&lt;/strong&gt; section.&lt;/p&gt;\n\n\t\t&lt;hr&gt;\n\t\t&lt;h2&gt;We do not trace your location&lt;/h2&gt;\n\n\t\t&lt;p style=\"text-align:justify\"&gt;&lt;strong&gt;&lt;a href=\"https://spreadit.eggze.com/\"&gt;spreadit&lt;/a&gt;&lt;/strong&gt; uses QR code scanning to record your visits to locations with a Location-QR code. You control whether to scan your visit to that location or not. Other than this, we do not collect any data about your location.&lt;/p&gt;\n\n\t\t&lt;hr&gt;\n\t\t&lt;h2&gt;We do not store any other data&lt;/h2&gt;\n\n\t\t&lt;p style=\"text-align:justify\"&gt;We do not currently use GPS, Bluetooth or any other personally identifying data from your device.&lt;/p&gt;\n\n\t\t&lt;hr&gt;\n\t\t&lt;h2&gt;No third-party services identity tracking&lt;/h2&gt;\n\n\t\t&lt;p style=\"text-align:justify\"&gt;Your User ID is private to the app on your device and the &lt;strong&gt;UserManager&lt;/strong&gt;. All data communications between the app and all managers is fully encrypted. This makes it impossible for third parties to track or identify you. Finally, we do not currently (1) &lt;strong&gt;use&lt;/strong&gt; or (2) &lt;strong&gt;rely on&lt;/strong&gt; any third-party services for the functionality currently present in the app.&lt;/p&gt;\n\n\t\t&lt;hr&gt;\n\t\t&lt;h2&gt;You are in control of your data&lt;/h2&gt;\n\n\t\t&lt;p style=\"text-align:justify\"&gt;You can choose not to use the app. You can choose not to scan your visit to a location with a Location-QR. You can choose not to scan your COVID-19 Test-QR. You can choose to use the app fully off-line. As this is a crowd-sourced effort, the more useful data we have, the better the modelling, predictions and measures taken can be targeted to fight the spread of the virus. Having said that, it is and will always be up to you.&lt;/p&gt;\n\n\t\t&lt;p style=\"text-align:justify\"&gt;If you would like your data deleted, you can simply stop using the app online. As the relevant contact tracing data recording period is approximately 15 days, any data older than 15 days is deleted from our servers. This means that by not using the app online, your data will be completely purged from the system as they will no longer be relevant for the unknown contact tracing functionality. You can continue to use the app off-line for your personal records if you so wish.&lt;/p&gt;\n\t\t\n\t\t&lt;p style=\"text-align:justify\"&gt; If you would nevertheless like to contact us regarding your data, you can do so by dropping us an email at &lt;strong&gt;privacy&lt;/strong&gt; &amp;lt;at&amp;gt; &lt;strong&gt;eggze.com&lt;/strong&gt;\n\n\t\t&lt;hr&gt;\n\t\t&lt;h2&gt;Data usage&lt;/h2&gt;\n\n\t\t&lt;p style=\"text-align:justify\"&gt;The data recorded will solely be used for COVID-19 &lt;strong&gt;unknown contact tracing purposes&lt;/strong&gt;.&lt;/p&gt;\n\t\t&lt;hr&gt;\n\t\t&lt;p style=\"text-align:justify\"&gt;To review our website\'s privacy policy, please visit our general &lt;strong&gt;&lt;a href=\"https://spreadit.eggze.com/privacy-policy-website/\"&gt;Website Privacy Policy&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;\n\u0020\u0020\u0020\t\t\t&lt;/body&gt;\n\u0020\u0020\u0020\t\t\t&lt;/html&gt;</string>
+    <string name="splashBottom">Nutzen Sie die Spreadit-App, um einen Standort-QR mit dem Spreadit-Logo zu scannen. In einem Bus, in einem Laden. Überall dort, wo Sie es sehen.</string>
+    <string name="splashTop">spreadit</string>
+    <string name="tab_text_2">Scan</string>
+    <string name="tab_text_3">Statistiken</string>
+    <string name="tab_text_4">Mehr</string>
+    <string name="action_tap_scan">Tippen Sie zum Scannen an</string>
+    <string name="action_view_past_scans">Schauen Sie Ihre letzten Scans an</string>
+    <string name="onboarding_title_0">spreadit</string>
+    <string name="onboarding_info_0">Verbreiten die App, verflachen die Kurve, stoppen den Virus. Anonym.</string>
+    <string name="onboarding_title_1">Wie funktioniert spreadit?</string>
+    <string name="onboarding_info_1">Verwenden Sie Spreadit, um einen Location-QR mit dem Spreadit-Logo zu scannen. In einem Bus, in einem Laden. Überall dort, wo Sie es sehen.\n\nWird benachrichtigt, wenn ein COVID-19 infizierten Benutzer an der gleichen Stelle sind.</string>
+    <string name="onboarding_title_2">Scannen Sie Ihre Tests</string>
+    <string name="onboarding_info_2">Wenn Sie Ihre COVID-19 Test-QR scannen, werden Sie über die offiziellen Ergebnisse informiert, sobald diese verfügbar sind.</string>
+    <string name="onboarding_title_3">Datenschutz</string>
+    <string name="onboarding_info_3">Ihre Daten werden vollständig anonymisiert und sicher kommuniziert.\n\nAkzeptieren Sie unsere Datenschutzerklärung, um zu beginnen.</string>
+    <string name="skip">ÜBERSPRINGEN</string>
+    <string name="done">FERTIG</string>
+    <string name="next">›</string>
+    <string name="action_show_terms">Datenschutzerklärung</string>
+    <string name="action_accept_terms">Akzeptieren</string>
+    <string name="permission_rationale_camera">Zum Scannen von QR-Codes ist ein Kamerazugriff erforderlich.</string>
+    <string name="action_ok">OK</string>
+    <string name="action_cancel">Abbrechen</string>
+    <string name="scan_title">spreadit</string>
+    <string name="scan_subtitle">Scannen &amp; sicher bleiben</string>
+    <string name="stats_title">Statistiken</string>
+    <string name="stats_subtitle">Die Nummern</string>
+    <string name="more_title">mehr</string>
+    <string name="more_subtitle">Einstellungen &amp; mehr</string>
+    <string name="contacted_one">Sie hatten in den letzten 15 Tagen %1$d Kontakt.</string>
+    <string name="contacted_many">Sie hatten in den letzten 15 Tagen %1$d Kontakte.</string>
+    <string name="positive">Sie sind mit COVID-19 diagnostiziert.</string>
+    <string name="last_update">Letztes Update</string>
+    <string name="more_section_tests_title">IHRE TESTS</string>
+    <string name="more_test_title">Fügen Sie einen neuen Test</string>
+    <string name="more_test_subtitle">Scannen Sie einen Test-QR, um Ihre Ergebnisse zu erhalten</string>
+    <string name="more_test_scan_error">Kein gültiger QR. Bitte versuche es erneut.</string>
+    <string name="more_test_scan_info">Platzieren Sie den Test-QR im Scanbereich.</string>
+    <string name="test_limit">Sie können nur einen QR pro Minute scannen.</string>
+    <string name="test_exists">Sie haben diesen Test QR bereits gescannt.</string>
+    <string name="more_test_list_title">Deine Tests</string>
+    <string name="more_test_list_subtitle">Überprüfen Sie Ihre Tests</string>
+    <string name="more_section_more_title">MEHR</string>
+    <string name="more_terms_title">Datenschutzerklärung</string>
+    <string name="more_terms_subtitle">Datenschutzerklärung &amp; Gesammelte Daten</string>
+    <string name="more_about_title">Über spreadit</string>
+    <string name="more_about_subtitle">spreadit - version: %1$s</string>
+    <string name="result">Ergebnis: %1$s</string>
+    <string name="result_pending">ANHÄNGIG</string>
+    <string name="result_ok">NEGATIV</string>
+    <string name="result_positive">POSITIV</string>
+    <string name="result_retest">ERNEUT TESTEN</string>
+    <string name="result_error">FEHLER</string>
+    <string name="results_pending">ANHÄNGIG</string>
+    <string name="results_ok">MIT ERGEBNISSEN</string>
+    <string name="scan_date">Scan Datum: %1$s</string>
+    <string name="result_date">Ergebnis Datum: %1$s</string>
+    <string name="test_empty_title">Kein Test gefunden</string>
+    <string name="error_title">Zu schnell</string>
+    <string name="scan_limit">Sie können nur einen QR pro Minute scannen.</string>
+    <string name="scan_result_ok">OK</string>
+    <string name="scan_result_contacts">KONTAKTE</string>
+    <string name="scans_title">Ihre Scans</string>
+    <string name="scans_empty_title">Keine Scans gefunden</string>
+    <string name="status">Status: %1$s</string>
+    <string name="app_update_title">Es ist eine neue spreadit Version verfügbar.</string>
+    <string name="app_update_action_title">Aktualisieren</string>
+    <string name="stats_users_title">BENUTZERSTATISTIKEN</string>
+    <string name="stats_total_users">GESAMTBENUTZER</string>
+    <string name="stats_scans_title">SCANSTATISTIKEN</string>
+    <string name="stats_location">STANDORTE</string>
+    <string name="stats_scans">SCANS</string>
+    <string name="stats_contacts">KONTAKTE</string>
+    <string name="stats_tests_title">TESTSTATISTIKEN</string>
+    <string name="stats_total_tests">GESAMTTESTS</string>
+    <string name="stats_tested">GETESTET</string>
+    <string name="stats_positive">POSITIV</string>
+    <string name="stats_empty_title">Keine Daten verfügbar. Bitte versuchen Sie es später noch einmal.</string>
+    <string name="notification_scan_title">Scan Status Aktualisierung</string>
+    <string name="notification_scan_message">Tippen Sie für Angaben an</string>
+    <string name="notification_test_title">Test Status Aktualisierung</string>
+    <string name="notification_test_message">Tippen Sie für Angaben an</string>
+    <string name="more_location_scan_info">Platzieren Sie den Standort-QR im Scanbereich</string>
+    <string name="more_user_title">Ihre Benutzer-ID</string>
+    <string name="more_contact_title">Kontaktieren Sie uns</string>
+    <string name="more_contact_subtitle">Senden Sie uns Ihr Feedback</string>
+    <string name="more_contact_email">spreadit@eggze.com</string>
+    <string name="more_about_url">https://spreadit.eggze.com/</string>
+    <string name="more_eggze_url">https://eggze.com/</string>
+    <string name="copied_to_clipboard">Benutzer-ID in die Zwischenablage kopiert</string>
+    <string name="more_kalyvas_url">https://me.kalyvasd.eu</string>
+    <string name="update_url">https://play.google.com/store/apps/details?id=com.eggze.spreadit</string>
+</resources>

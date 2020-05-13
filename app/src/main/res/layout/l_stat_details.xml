@@ -1,0 +1,202 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="androidx.core.content.ContextCompat" />
+
+        <variable
+            name="title"
+            type="String" />
+
+        <variable
+            name="type"
+            type="String" />
+
+        <variable
+            name="value"
+            type="String" />
+
+        <variable
+            name="typeLeft"
+            type="String" />
+
+        <variable
+            name="valueLeft"
+            type="String" />
+
+        <variable
+            name="valueLeftColor"
+            type="int" />
+
+
+        <variable
+            name="typeRight"
+            type="String" />
+
+        <variable
+            name="valueRight"
+            type="String" />
+
+        <variable
+            name="valueRightColor"
+            type="int" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:clipToPadding="false"
+        android:padding="@dimen/padding_medium"
+        android:layout_margin="@dimen/padding_medium"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/title_txtv"
+            android:text="@{title}"
+            style="@style/MoreSectionTitle"
+            android:layout_marginLeft="@dimen/padding_medium"
+            android:layout_marginTop="@dimen/padding_normal"
+            android:layout_marginRight="@dimen/padding_medium"
+            tools:text="@string/more_section_tests_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.card.MaterialCardView
+            app:layout_constraintTop_toBottomOf="@+id/title_txtv"
+            android:id="@+id/root_l"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/padding_medium"
+            android:layout_margin="@dimen/padding_medium"
+            android:clipToPadding="false"
+            app:cardBackgroundColor="@color/cardBg"
+            app:cardCornerRadius="@dimen/card_corner_radius"
+            app:cardElevation="@dimen/card_elevation"
+            app:rippleColor="@android:color/transparent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/value_txtv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_normal"
+                    android:layout_marginTop="@dimen/padding_normal"
+                    android:layout_marginRight="@dimen/padding_normal"
+                    android:gravity="center"
+                    android:text="@{value}"
+                    android:textColor="@color/text"
+                    android:textSize="@dimen/text_large"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_goneMarginBottom="@dimen/padding_normal"
+                    tools:text="6000" />
+
+                <TextView
+                    android:id="@+id/header_type_txtv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_normal"
+                    android:layout_marginRight="@dimen/padding_normal"
+                    android:layout_marginBottom="@dimen/padding_normal"
+                    android:gravity="center"
+                    android:text="@{type}"
+                    android:textColor="@color/textSecondary"
+                    android:textSize="@dimen/text_xsmall"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/value_txtv"
+                    tools:text="TOTAL USERS" />
+
+
+                <View
+                    android:id="@+id/center_v"
+                    android:layout_width="1dp"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="@dimen/padding_medium"
+                    android:layout_marginBottom="@dimen/padding_medium"
+                    android:background="@color/textSecondary"
+                    app:layout_constraintBottom_toBottomOf="@+id/type_left_txtv"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/value_left_txtv" />
+
+                <TextView
+                    android:id="@+id/value_left_txtv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_normal"
+                    android:layout_marginTop="@dimen/padding_normal"
+                    android:layout_marginRight="@dimen/padding_normal"
+                    android:gravity="center"
+                    android:text="@{valueLeft}"
+                    android:textColor="@{ContextCompat.getColor(context, valueLeftColor)}"
+                    android:textSize="@dimen/text_normal"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@+id/center_v"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/header_type_txtv"
+                    app:layout_goneMarginBottom="@dimen/padding_normal"
+                    tools:text="6000" />
+
+                <TextView
+                    android:id="@+id/type_left_txtv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_normal"
+                    android:layout_marginRight="@dimen/padding_normal"
+                    android:layout_marginBottom="@dimen/padding_normal"
+                    android:gravity="center"
+                    android:text="@{typeLeft}"
+                    android:textColor="@color/textSecondary"
+                    android:textSize="@dimen/text_xsmall"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/center_v"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/value_left_txtv"
+                    tools:text="TOTAL USERS" />
+
+                <TextView
+                    android:id="@+id/value_right_txtv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_normal"
+                    android:layout_marginTop="@dimen/padding_normal"
+                    android:layout_marginRight="@dimen/padding_normal"
+                    android:gravity="center"
+                    android:text="@{valueRight}"
+                    android:textColor="@{ContextCompat.getColor(context, valueRightColor)}"
+                    android:textSize="@dimen/text_normal"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/center_v"
+                    app:layout_constraintTop_toBottomOf="@+id/header_type_txtv"
+                    tools:text="6000" />
+
+                <TextView
+                    android:id="@+id/type_right_txtv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_normal"
+                    android:layout_marginRight="@dimen/padding_normal"
+                    android:layout_marginBottom="@dimen/padding_normal"
+                    android:gravity="center"
+                    android:text="@{typeRight}"
+                    android:textColor="@color/textSecondary"
+                    android:textSize="@dimen/text_xsmall"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/center_v"
+                    app:layout_constraintTop_toBottomOf="@+id/value_right_txtv"
+                    tools:text="TOTAL USERS" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

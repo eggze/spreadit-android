@@ -1,0 +1,60 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="onClickListener"
+            type="android.view.View.OnClickListener" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/root_l"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorAccent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:navigationIcon="@drawable/ic_chevron_left_white"
+            app:title="@string/onboarding_title_3"
+            app:titleTextColor="@color/textWhite" />
+
+        <!-- <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:clipToPadding="false"
+            android:padding="@dimen/padding_normal"
+            app:layout_constraintBottom_toTopOf="@+id/action_btn"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"> -->
+
+            <WebView
+                android:id="@+id/terms_txtv"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textColor="@color/text"
+                android:textSize="@dimen/text_normal"
+                app:layout_constraintBottom_toTopOf="@+id/action_btn"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar"/>
+        <!-- </ScrollView> -->
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/action_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding_normal"
+            android:onClick="@{onClickListener}"
+            android:text="@string/action_accept_terms"
+            android:textAllCaps="false"
+            app:backgroundTint="@color/colorAccent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

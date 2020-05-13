@@ -1,0 +1,121 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="com.eggze.spreadit.R" />
+
+        <import type="android.view.View" />
+
+        <variable
+            name="onClickListener"
+            type="android.view.View.OnClickListener" />
+
+        <variable
+            name="stats"
+            type="com.eggze.spreadit.data.database.entity.Stats" />
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/windowBackground"
+        android:fitsSystemWindows="true"
+        tools:context=".ui.main.StatsFragment">
+
+        <include
+            layout="@layout/l_header"
+            app:subtitle="@{@string/stats_subtitle}"
+            app:title="@{@string/stats_title}" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:fillViewport="true"
+            android:paddingTop="@dimen/padding_medium"
+            android:paddingBottom="@dimen/padding_medium"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/main_l"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                tools:context=".ui.main.StatsFragment">
+
+                <include
+                    android:id="@+id/total_users"
+                    layout="@layout/l_stat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:bgColor="@{R.color.cardBg}"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:title="@{@string/stats_users_title}"
+                    app:type="@{@string/stats_total_users}"
+                    app:typeColor="@{R.color.textSecondary}"
+                    app:value='@{String.valueOf(stats.getFUsers())}'
+                    app:valueColor="@{R.color.text}" />
+
+                <include
+                    android:id="@+id/locations"
+                    layout="@layout/l_stat_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/total_users"
+                    app:title="@{@string/stats_scans_title}"
+                    app:type="@{@string/stats_location}"
+                    app:typeLeft="@{@string/stats_scans}"
+                    app:typeRight="@{@string/stats_contacts}"
+                    app:value='@{String.valueOf(stats.getFLocations())}'
+                    app:valueLeft='@{String.valueOf(stats.getFScans())}'
+                    app:valueLeftColor="@{R.color.text}"
+                    app:valueRight='@{String.valueOf(stats.getFContacts())}'
+                    app:valueRightColor="@{R.color.contacted}" />
+
+                <include
+                    android:id="@+id/tests"
+                    layout="@layout/l_stat_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="?attr/actionBarSize"
+                    app:layout_constraintTop_toBottomOf="@+id/locations"
+                    app:title="@{@string/stats_tests_title}"
+                    app:type="@{@string/stats_total_tests}"
+                    app:typeLeft="@{@string/stats_tested}"
+                    app:typeRight="@{@string/stats_positive}"
+                    app:value='@{String.valueOf(stats.getFTests())}'
+                    app:valueLeft='@{String.valueOf(stats.getFTestedUsers())}'
+                    app:valueLeftColor="@{R.color.text}"
+                    app:valueRight="@{String.valueOf(stats.getFPositives())}"
+                    app:valueRightColor="@{R.color.positive}" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <include
+            android:id="@+id/empty_l"
+            layout="@layout/l_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            app:hasAction="@{false}"
+            app:icon="@{R.drawable.ic_stats}"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            app:title="@{@string/stats_empty_title}" />
+
+        <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+            android:id="@+id/loading_v"
+            style="@style/Widget.MaterialProgressBar.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:indeterminate="true"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            app:mpb_indeterminateTint="@color/loading"
+            app:mpb_progressStyle="horizontal"
+            app:mpb_useIntrinsicPadding="false" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

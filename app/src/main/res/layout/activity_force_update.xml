@@ -1,0 +1,22 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <import type="com.eggze.spreadit.R"/>
+        <variable
+            name="onClickListener"
+            type="android.view.View.OnClickListener" />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activities.MainActivity">
+
+       <include layout="@layout/l_empty"
+           app:onClickListener="@{onClickListener}"
+           app:hasAction="@{true}"
+           app:actionTitle="@{@string/app_update_action_title}"
+           app:title="@{@string/app_update_title}"
+           app:icon="@{R.drawable.ic_update}"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

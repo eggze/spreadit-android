@@ -1,0 +1,183 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="com.eggze.spreadit.R" />
+
+        <variable
+            name="onClickListener"
+            type="android.view.View.OnClickListener" />
+
+        <variable
+            name="userID"
+            type="String" />
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/windowBackground"
+        android:fitsSystemWindows="true"
+        tools:context=".ui.main.MoreFragment">
+
+        <include
+            layout="@layout/l_header"
+            app:subtitle="@{@string/more_subtitle}"
+            app:title="@{@string/more_title}" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/padding_medium"
+            android:clipToPadding="false"
+            android:fillViewport="true"
+            android:paddingLeft="@dimen/padding_medium"
+            android:paddingTop="@dimen/padding_normal"
+            android:paddingBottom="@dimen/padding_normal"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false">
+
+                <TextView
+                    android:id="@+id/tests_title"
+                    style="@style/MoreSectionTitle"
+                    android:layout_marginLeft="@dimen/padding_medium"
+                    android:layout_marginTop="@dimen/padding_normal"
+                    android:layout_marginRight="@dimen/padding_medium"
+                    android:text="@string/more_section_tests_title"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <include
+                    android:id="@+id/add_test_l"
+                    layout="@layout/l_card_more"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_medium"
+                    android:layout_marginTop="@dimen/padding_medium"
+                    android:layout_marginRight="@dimen/padding_medium"
+                    app:icon="@{R.drawable.ic_qrcode_plus}"
+                    app:layout_constraintTop_toBottomOf="@+id/tests_title"
+                    app:onClickListener="@{onClickListener}"
+                    app:subtitle="@{@string/more_test_subtitle}"
+                    app:title="@{@string/more_test_title}" />
+
+                <include
+                    android:id="@+id/tests_list_l"
+                    layout="@layout/l_card_more"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_medium"
+                    android:layout_marginTop="@dimen/padding_medium"
+                    android:layout_marginRight="@dimen/padding_medium"
+                    app:icon="@{R.drawable.ic_test_list}"
+                    app:layout_constraintTop_toBottomOf="@+id/add_test_l"
+                    app:onClickListener="@{onClickListener}"
+                    app:subtitle="@{@string/more_test_list_subtitle}"
+                    app:title="@{@string/more_test_list_title}" />
+
+                <TextView
+                    android:id="@+id/more_title"
+                    style="@style/MoreSectionTitle"
+                    android:layout_marginLeft="@dimen/padding_medium"
+                    android:layout_marginTop="@dimen/padding_xlarge"
+                    android:layout_marginRight="@dimen/padding_medium"
+                    android:text="@string/more_section_more_title"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tests_list_l" />
+
+                <include
+                    android:id="@+id/user_l"
+                    layout="@layout/l_card_more"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_medium"
+                    android:layout_marginTop="@dimen/padding_medium"
+                    android:layout_marginRight="@dimen/padding_medium"
+                    app:icon="@{R.drawable.ic_account_outline}"
+                    app:onClickListener="@{onClickListener}"
+                    app:layout_constraintTop_toBottomOf="@+id/more_title"
+                    app:subtitle="@{userID}"
+                    app:actionIcon="@{R.drawable.ic_content_copy}"
+                    app:title="@{@string/more_user_title}" />
+
+                <include
+                    android:id="@+id/contact_l"
+                    layout="@layout/l_card_more"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_medium"
+                    android:layout_marginTop="@dimen/padding_medium"
+                    android:layout_marginRight="@dimen/padding_medium"
+                    app:icon="@{R.drawable.ic_mail_outline}"
+                    app:layout_constraintTop_toBottomOf="@+id/user_l"
+                    app:onClickListener="@{onClickListener}"
+                    app:subtitle="@{@string/more_contact_subtitle}"
+                    app:title="@{@string/more_contact_title}" />
+
+
+                <include
+                    android:id="@+id/terms_l"
+                    layout="@layout/l_card_more"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_medium"
+                    android:layout_marginTop="@dimen/padding_medium"
+                    android:layout_marginRight="@dimen/padding_medium"
+                    app:icon="@{R.drawable.ic_terms}"
+                    app:layout_constraintTop_toBottomOf="@+id/contact_l"
+                    app:onClickListener="@{onClickListener}"
+                    app:subtitle="@{@string/more_terms_subtitle}"
+                    app:title="@{@string/more_terms_title}" />
+
+                <include
+                    android:id="@+id/about_l"
+                    layout="@layout/l_card_more"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_medium"
+                    android:layout_marginTop="@dimen/padding_medium"
+                    android:layout_marginRight="@dimen/padding_medium"
+                    android:layout_marginBottom="@dimen/padding_large"
+                    app:icon="@{R.drawable.ic_about}"
+                    app:layout_constraintTop_toBottomOf="@+id/terms_l"
+                    app:onClickListener="@{onClickListener}"
+                    app:title="@{@string/more_about_title}" />
+
+                <ImageView
+                    android:id="@+id/from_iv"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="@dimen/padding_large"
+                    android:layout_marginBottom="?attr/actionBarSize"
+                    android:onClickListener="@{onClickListener}"
+                    app:layout_constraintDimensionRatio="175:93"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/about_l"
+                    app:layout_constraintWidth_percent="0.4"
+                    app:srcCompat="@drawable/ic_logo" />
+                <ImageView
+                    android:id="@+id/from_b_iv"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="@dimen/padding_medium"
+                    android:layout_marginBottom="?attr/actionBarSize"
+                    android:onClickListener="@{onClickListener}"
+                    app:layout_constraintDimensionRatio="138:38"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/from_iv"
+                    app:layout_constraintWidth_percent="0.3"
+                    app:srcCompat="@drawable/ic_logo_b" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

@@ -1,0 +1,1 @@
+adb shell am start -a "android.intent.action.VIEW" -d "https://spreadit.eggze.com/deeplin/screens/scans"

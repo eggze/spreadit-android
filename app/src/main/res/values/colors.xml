@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#e8e8e8</color>
+    <color name="colorPrimaryDark">@color/black</color>
+    <color name="colorAccent">#eb5569</color>
+    <color name="navigationBarColor">#ffffff</color>
+    <color name="windowBackground">#F6ECEE</color>
+
+    <color name="text">@color/black</color>
+    <color name="textSecondary">#BABABA</color>
+    <color name="textWhite">#ffffff</color>
+    <color name="textWhiteSecondary">#E6E6E6</color>
+
+    <color name="tab_background_selected">#b0b0b0</color>
+    <color name="tab_background_unselected">#e8e8e8</color>
+
+    <color name="tab_selected">@color/colorAccent</color>
+    <color name="tab_unselected">#A48F92</color>
+
+    <color name="onboarding_bg_0">@color/colorAccent</color>
+    <color name="onboarding_bg_1">#A48F92</color>
+    <color name="onboarding_bg_2">#00897B</color>
+    <color name="onboarding_bg_3">@color/black</color>
+
+    <color name="contacted">#A48F92</color>
+    <color name="positive">#EF3E36</color>
+    <color name="ok">#92BDA3</color>
+    <color name="retest">#EAC435</color>
+    <color name="cardBg">#FFFFFF</color>
+<!--    44AF69-->
+<!--    92BDA3-->
+    <color name="black">#262322</color>
+    <color name="loading">#92BDA3</color>
+</resources>
+
+
